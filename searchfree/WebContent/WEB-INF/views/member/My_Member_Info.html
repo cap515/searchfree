@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    
+      <!-- script -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <style>
+      /*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.clearfix::after,
+.calendar ol::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* ================
+Calendar Styling */
+.calendar {
+  border-radius: 10px;
+}
+
+.month {
+  font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+  .month {
+    font-size: 3.5rem;
+  }
+}
+
+.calendar ol li {
+  float: left;
+  width: 14.28571%;
+}
+
+.calendar .day-names {
+  border-bottom: 1px solid #eee;
+}
+
+.calendar .day-names li {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.calendar .days li {
+  border-bottom: 1px solid #eee;
+  min-height: 8rem;
+}
+
+.calendar .days li .date {
+  margin: 0.5rem 0;
+}
+
+.calendar .days li .event {
+  font-size: 0.75rem;
+  padding: 0.4rem;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4rem;
+  margin-bottom: 1px;
+}
+
+.calendar .days li .event.span-2 {
+  width: 200%;
+}
+
+.calendar .days li .event.begin {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.calendar .days li .event.end {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.calendar .days li .event.clear {
+  background: none;
+}
+
+.calendar .days li:nth-child(n+29) {
+  border-bottom: none;
+}
+
+.calendar .days li.outside .date {
+  color: #ddd;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+
+
+      </style>
+      
+    <title>MyMemberInfo</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+ 
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/kim.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    </head>
+    <body>
+       
+    <!-- header-start -->
+    <header>
+      <div class="header-area ">
+          <div id="sticky-header" class="main-header-area">
+              <div class="container-fluid ">
+                  <div class="header_bottom_border">
+                      <div class="row align-items-center">
+                          <div class="col-xl-3 col-lg-2">
+                              <div class="logo">
+                                  <a href="index.html">
+                                      <img src="img/logo.png" alt="">
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-xl-6 col-lg-7">
+                              <div class="main-menu  d-none d-lg-block">
+                                  <nav>
+                                      <ul id="navigation">
+                                          <li><a href="index.html">home</a></li>
+                                          <li><a href="Listings.html">Listings</a></li>
+                                          <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                              <ul class="submenu">
+                                                  
+                                                  <li><a href="elements.html">elements</a></li>
+                                                  <li><a href="single_listings.html">Single listing</a></li>
+                                              </ul>
+                                          </li>
+                                          <li><a href="about.html">about</a></li>
+                                          <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                              <ul class="submenu">
+                                                  <li><a href="blog.html">blog</a></li>
+                                                  <li><a href="single-blog.html">single-blog</a></li>
+                                              </ul>
+                                          </li>
+                                          <li><a href="contact.html">Contact</a></li>
+                                      </ul>
+                                  </nav>
+                              </div>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                              <div class="Appointment">
+                                  <div class="book_btn d-none d-lg-block">
+                                      <a href="#">Sign In</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12">
+                              <div class="mobile_menu d-block d-lg-none"></div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- header-end -->
+   <!-- bradcam_area  -->
+   <div class="bradcam_area bradcam_bg_2">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-12">
+                      <div class="bradcam_text text-center">
+                          <h3>Single Blog</h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--/ bradcam_area  -->
+
+
+        <section class="body-content">  
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3" >
+                        <div class="blog_right_sidebar">
+                            <aside class="single_sidebar_widget post_category_widget">
+                               
+                                <ul class="list cat-list" >
+                                   <li>
+                                      <a href="My_Member_Info.html" class="d-flex">
+                                         <p text-align="center" >회원정보</p>
+                                         
+                                      </a>
+                                   </li>
+                                   <li>
+                                      <a href="My_Member_Edit.html" class="d-flex">
+                                         <p >회원정보 수정</p>
+                                         
+                                      </a>
+                                   </li>
+                                   <li>
+                                      <a href="My_Member_Withdrawal.html" class="d-flex">
+                                         <p >회원탈퇴</p>
+                                        
+                                      </a>
+                                   </li>
+                                   <li>
+                                      <a href="My_Profile_Edit.html" class="d-flex">
+                                         <p >프로필관리</p>
+                                         
+                                      </a>
+                                   </li>
+                                   <li>
+                                      <a href="#" class="d-flex">
+                                         <p >결제내역</p>
+                                         
+                                      </a>
+                                   </li>
+                                   
+                                </ul>
+                             </aside>
+
+
+
+                        </div> <!-- 사이드바 -->
+
+
+                    </div> <!-- <div class="col-lg-4"> -->
+                    <div class="col-lg-9 posts-list">
+
+                     <!-- counter_area1  -->
+                     <div class="counter_area">
+                        <div class="container">
+                            <div class="border_bottom">
+                               <p>Progress</p>
+                                 <div class="row">
+                                          <div class="col-xl-4 col-md-4">
+                                             <div class="single_counter text-center">
+                                                   <h3> <span  class="counter" style=color:rgb(131,203,245) >10</span> </h3>
+                                                   <p>완료된 프로젝트</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-xl-4 col-md-4">
+                                             <div class="single_counter text-center" >
+                                                   <h3> <span class="counter" style=color:rgb(131,203,245) >5</span></h3>
+                                                   <p>진행중인 프로젝트수</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-xl-4 col-md-4 ">
+                                             <div class="single_counter text-center" >
+                                                   <h3> <span class="counter" style=color:rgb(131,203,245) >301</span></h3>
+                                                   <p>새로운 쪽지</p>
+                                             </div>
+                                          </div>
+                                 </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                        <!-- counter_area1  -->
+
+                    <!-- counter_area2  -->
+                    <div class="counter_area">
+                     <div class="container">
+                         <div class="border_bottom">
+                              <div class="row">
+                                 <div class="col-xl-4 col-md-4">
+                                    <div class="single_counter text-center" >
+                                          <h3> <span  class="counter" style=color:rgb(131,203,245) >32</span> </h3>
+                                          <p>새로운 리뷰</p>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-md-4">
+                                    <div class="single_counter text-center" >
+                                          <h3> <span class="counter" style=color:rgb(131,203,245) >3.9</span></h3>
+                                          <p>평균 별점</p>
+                                    </div>
+                                 </div>
+                                 <div class="col-xl-4 col-md-4 ">
+                                    <div class="single_counter text-center" >
+                                          <h3> <span class="counter" style=color:rgb(131,203,245)>20</span><span style="color:rgb(131,203,245)">%</span></h3>
+                                          <p>프로젝트 완료율</p>
+                                    </div>
+                                 </div>
+                              </div>
+                         </div>
+                     <!-- counter_area2  -->
+
+
+                     </div>
+                 </div>
+                 <p>Schedule</p>
+                 <div class="col-xl-7 col-md-6" style="float: left;">달력위치
+                  <div class="container py-5">
+
+                    <!-- For Demo Purpose -->
+                    
+                  
+                    <!-- Calendar : https://jsfiddle.net/bootstrapious/0omayhc4 -->
+                    <div class="calendar shadow bg-white p-5">
+                      <div class="d-flex align-items-center"><i class="fa fa-calendar fa-3x mr-3"></i>
+                        <h2 class="month font-weight-bold mb-0 text-uppercase">Jan 2020</h2>
+                      </div>
+                      <p class="font-italic text-muted mb-5">No events for this day.</p>
+                      <ol class="day-names list-unstyled">
+                        <li class="font-weight-bold text-uppercase">일</li>
+                        <li class="font-weight-bold text-uppercase">월</li>
+                        <li class="font-weight-bold text-uppercase">화</li>
+                        <li class="font-weight-bold text-uppercase">수</li>
+                        <li class="font-weight-bold text-uppercase">목</li>
+                        <li class="font-weight-bold text-uppercase">금</li>
+                        <li class="font-weight-bold text-uppercase">토</li>
+                      </ol>
+                  
+                      <ol class="days list-unstyled">
+                        <li>
+                          <div class="date">1</div>
+                          <div class="event bg-success">Event with Long Name</div>
+                        </li>
+                        <li>
+                          <div class="date">2</div>
+                        </li>
+                        <li>
+                          <div class="date">3</div>
+                        </li>
+                        <li>
+                          <div class="date">4</div>
+                        </li>
+                        <li>
+                          <div class="date">5</div>
+                        </li>
+                        <li>
+                          <div class="date">6</div>
+                        </li>
+                        <li>
+                          <div class="date">7</div>
+                        </li>
+                        <li>
+                          <div class="date">8</div>
+                        </li>
+                        <li>
+                          <div class="date">9</div>
+                        </li>
+                        <li>
+                          <div class="date">10</div>
+                        </li>
+                        <li>
+                          <div class="date">11</div>
+                        </li>
+                        <li>
+                          <div class="date">12</div>
+                        </li>
+                        <li>
+                          <div class="date">13</div>
+                          <div class="event all-day begin span-2 bg-warning">Event Name</div>
+                        </li>
+                        <li>
+                          <div class="date">14</div>
+                        </li>
+                        <li>
+                          <div class="date">15</div>
+                          <div class="event all-day end bg-success">Event Name</div>
+                        </li>
+                        <li>
+                          <div class="date">16</div>
+                        </li>
+                        <li>
+                          <div class="date">17</div>
+                        </li>
+                        <li>
+                          <div class="date">18</div>
+                        </li>
+                        <li>
+                          <div class="date">19</div>
+                        </li>
+                        <li>
+                          <div class="date">20</div>
+                        </li>
+                        <li>
+                          <div class="date">21</div>
+                          <div class="event bg-primary">Event Name</div>
+                          <div class="event bg-success">Event Name</div>
+                        </li>
+                        <li>
+                          <div class="date">22</div>
+                          <div class="event bg-info">Event with Longer Name</div>
+                        </li>
+                        <li>
+                          <div class="date">23</div>
+                        </li>
+                        <li>
+                          <div class="date">24</div>
+                        </li>
+                        <li>
+                          <div class="date">25</div>
+                        </li>
+                        <li>
+                          <div class="date">26</div>
+                        </li>
+                        <li>
+                          <div class="date">27</div>
+                        </li>
+                        <li>
+                          <div class="date">28</div>
+                        </li>
+                        <li>
+                          <div class="date">29</div>
+                        </li>
+                        <li>
+                          <div class="date">30</div>
+                        </li>
+                        <li>
+                          <div class="date">31</div>
+                        </li>
+                        <li class="outside">
+                          <div class="date">1</div>
+                        </li>
+                        <li class="outside">
+                          <div class="date">2</div>
+                        </li>
+                        <li class="outside">
+                          <div class="date">3</div>
+                        </li>
+                        <li class="outside">
+                          <div class="date">4</div>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  
+                 
+                  
+                 </div>
+                  
+                  <div class="col-xl-5 col-md-6" style="float: left;"> <p>주요 일정</p>
+                    <p class="font-italic mb-0">A nicely-designed Bootstrap calendar widget. 
+                      This calendar is just a for design purpose, you can make it work.</p>
+                  
+                  </div>
+               
+                  </div>
+               
+                </div>
+                
+            
+        </section>    
+  
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="footer_top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-4 col-md-6 col-lg-3">
+                      <div class="footer_widget">
+                          <div class="footer_logo">
+                              <a href="#">
+                                  <img src="img/footer_logo.png" alt="">
+                              </a>
+                          </div>
+                          <p>
+                              Esteem spirit temper too say adieus who <br> direct esteem. It esteems luckily or <br>
+                              picture placing drawing.
+                          </p>
+                          <div class="socail_links">
+                              <ul>
+                                  <li>
+                                      <a href="#">
+                                          <i class="ti-facebook"></i>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#">
+                                          <i class="fa fa-google-plus"></i>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#">
+                                          <i class="fa fa-twitter"></i>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#">
+                                          <i class="fa fa-instagram"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+
+                      </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-lg-3">
+                      <div class="footer_widget">
+                          <h3 class="footer_title">
+                              Services
+                          </h3>
+                          <ul>
+                              <li><a href="#">SEO/SEM </a></li>
+                              <li><a href="#">Web design </a></li>
+                              <li><a href="#">Ecommerce</a></li>
+                              <li><a href="#">Digital marketing</a></li>
+                          </ul>
+
+                      </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-lg-2">
+                      <div class="footer_widget">
+                          <h3 class="footer_title">
+                              Useful Links
+                          </h3>
+                          <ul>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Blog</a></li>
+                              <li><a href="#"> Contact</a></li>
+                              <li><a href="#">Support</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6 col-lg-4">
+                      <div class="footer_widget">
+                          <h3 class="footer_title">
+                              Subscribe
+                          </h3>
+                          <form action="#" class="newsletter_form">
+                              <input type="text" placeholder="Enter your mail">
+                              <button type="submit">Subscribe</button>
+                          </form>
+                          <p class="newsletter_text">Esteem spirit temper too say adieus who direct esteem esteems
+                              luckily.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copy-right_text">
+          <div class="container">
+              <div class="footer_border"></div>
+              <div class="row">
+                  <div class="col-xl-12">
+                      <p class="copy_right text-center">
+                          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with 
+                          <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!--/ footer end  -->      
+
+
+
+
+  <!-- link that opens popup -->
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <!-- <script src="js/gijgo.min.js"></script> -->
+    <script src="js/slick.min.js"></script>
+   
+
+    
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+
+    <script src="js/main.js"></script>
+
+
+
+    </body>
+</html>

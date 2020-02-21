@@ -1,0 +1,201 @@
+.bigSand_summernote_margin{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bigSand_project_inputitle{
+    text-align: center;
+    width:100%;
+    background-color: #001d38;
+    border:none;
+    color:white;
+    font-family: "Shadows Into Light", cursive;
+    font-size:40px;
+    margin-top:6px;
+}
+
+.bigSand_project_inputitle::-webkit-input-placeholder { 
+    font-family: "Shadows Into Light", cursive;
+    font-size:40px; 
+}
+
+.bigSand_project_form{
+    /* border: 1px solid #b3b3b3; */
+}
+
+.bigSand_project_image_div{
+    padding: 60px 30px 0px 35px !important;
+}
+
+.bigSnad_upload_btns{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.bigSand_project_alt{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.bigSand_project_alt input{
+    display:none;
+}
+
+.bigSand_upload_btn_resizing{
+    font-size: 15px !important;
+    padding-top: 10px !important;    
+    padding-bottom: 10px !important; 
+    padding-left: 20px !important;    
+    padding-right: 20px !important; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.bigSand_project_explanation{
+    width:100%;
+}
+.bigSand_project_explanation_title{
+    font-family: default !important;
+}
+.bigSand_project_explanation_text{
+    font-family: default !important;
+    display:block;
+}
+.bigSand_project_explanation textarea{
+    resize:none;
+    width:100%;
+}
+.bigSand_project_explanation input{
+    width:100%;
+}
+
+.bigSand_category {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 300px;
+    border: 1px solid #b3b3b3;
+}
+.bigSand_category_label{
+    width:40%;
+    color:black;
+    display:inline-block;
+}
+.bigSand_category_label label{
+    color:white;
+    background: #001D38;
+    padding:10px 15px 10px 15px;
+    border-radius: 3px;
+}
+.bigSand_category_select{
+    width:50%;
+    height:27px;
+    margin-top: 5px;
+    display:inline-block;
+}
+.bigSand_category_select_select{
+    width:100%;
+    display:inline-block;
+    border: #001D38 1px solid;
+}
+.bigSand_category_select span{
+    width:100%;
+}
+.bigSand_category span{
+    display:block;
+    width:100%;
+}
+.bigSand_project_tag{
+    width:100%;
+    height:120px;
+    border:1px solid #b3b3b3;
+    border-radius: 3px;
+}
+.bigSand_project_tag_title{
+    height:40px;
+    width:100%;
+    background-color: #001D38;
+    border-radius: 3px;
+}
+.bigSand_project_tag_title span{
+    display:inline-block;
+    width:100px;
+    color:white;
+    line-height: 40px;
+    margin:0px 20px 0px 10px
+}
+.bigSand_add_tag{
+    align-content: right;
+    line-height: 25px;
+    margin-left: 230px;
+    border: 0px;
+    background-color: rgb(13, 56, 97);
+    color:white;
+    font-weight: bold;
+}
+
+.bigSand_add_tag:hover{
+    align-content: right;
+    line-height: 25px;
+    margin-left: 230px;
+    border: 0px;
+    background-color: rgb(23, 72, 117);
+    color:white;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.project_tag{
+    width:90px;
+    margin: 2px 2px 2px 2px;
+    border-radius:5px;
+    border:0px;
+    background-color: #b3b3b3;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+}
+.bigSand_add_tag:focus{
+    border: 0px;
+}
+
+.bigSand_project_alt_ul{list-style:none;}
+
+.bigSand_comment .bigSand_comment_comment{
+  padding-left: 30px;
+}
+
+.bigSand_project_alt{ 
+  max-width:99%; 
+  margin: 0 auto; 
+  position:relative; 
+}
+.bigSand_project_alt ul li{
+  display:  inline-block;
+  width:50%; 
+  float:left;  
+  text-align:center; 
+  background :#ccc;
+  
+  line-height:40px;
+}
+.bigSand_project_alt label{
+  display:block;
+  width:100%; 
+  height:40px;
+  line-height:40px;
+  margin-bottom:0px;
+  background-color: #001D38;
+  color:white;
+}
+.bigSand_project_alt input{display:none;}
+
+.bigSand_project_alt input:checked ~ label{
+  background:rgb(0, 51, 99);
+  color:white;
+}
+.tabmenu input:checked ~ .tabCon{
+  display:block;
+}

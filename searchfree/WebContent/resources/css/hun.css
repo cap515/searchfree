@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,200i,300,300i,400,400i,500,600,600i,700|Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,200i,300,300i,400,400i,500,600,600i,700|Shadows+Into+Light&display=swap");
+
+/* 적용 css */
+.contentarea{
+    position: relative;
+  }
+  .contentarea{
+  margin: 0px;
+  }
+  .btr{
+    padding-bottom: 50px;
+  }
+  .blog_left_sidebar{
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+  
+  }
+  .notice{
+    box-sizing: border-box;
+    border:1px solid #D5D5D5;
+    height: 600px
+  }
+  .table-active{
+    position: relative;
+  }
+  
+  .no{
+    width: 10%;
+    text-align: center;
+  }
+  .date{
+   width: 20%;
+   text-align: center;
+  }
+  .title{
+      text-align: center;
+      margin: auto;
+  }
+  /* .nav{ 
+    float: left;
+    width:33.3%;
+    text-align: center;
+  }
+  /* .nav-item{ 
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+   } */
+  
+  
+  

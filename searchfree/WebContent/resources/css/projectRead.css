@@ -1,0 +1,851 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,200i,300,300i,400,400i,500,600,600i,700|Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,200i,300,300i,400,400i,500,600,600i,700|Shadows+Into+Light&display=swap");
+.bigSand_bg_1 {
+  background-image: url(../img/banner/bigSand.png);
+}
+
+/* line 4, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+
+.bigSand_bg_2 {
+  background-image: url(../img/catagory/Programmer.png);
+}
+
+/* line 7, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+
+.bigSand_bg_3 {
+  background-image: url(../img/banner/bigSand3.png);
+}
+
+.bigSand_bg_test {
+  background-image: url(../img/test/vertical.png);
+}
+
+/* line 10, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+
+.bigSand_area {
+  background-size: cover;
+  background-position: center center;
+  padding: 220px 0 194px 0;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 10, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+  .bigSand_area {
+    padding: 120px 0;
+  }
+}
+
+/* line 21, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+
+.bigSand_area::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#001d38+0,001d38+100&1+0,0.6+100 */
+  background: -moz-linear-gradient(top, #001d38 0%, rgba(0, 29, 56, 0.6) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #001d38 0%, rgba(0, 29, 56, 0.6) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #001d38 0%, rgba(0, 29, 56, 0.6) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001d38', endColorstr='#99001d38', GradientType=0);
+  /* IE6-9 */
+  z-index: -1;
+  content: '';
+}
+
+@media (max-width: 767px) {
+  /* line 10, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+  .bigSand_area {
+    padding: 150px 0;
+  }
+}
+
+/* line 38, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+
+.bigSand_area h3 {
+  font-size: 70px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+  /* line 38, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+  .bigSand_area h3 {
+    font-size: 30px;
+  }
+}
+
+/* line 48, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+
+.bigSand_area p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+/* line 53, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+
+.bigSand_area p a {
+  color: #fff;
+}
+
+/* line 55, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+
+.bigSand_area p a:hover {
+  color: #fff;
+}
+
+/* line 61, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+
+.bigSand_area .icon {
+  background: #FF5748;
+  width: 136px;
+  height: 136px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 136px;
+  margin: auto;
+}
+
+/* line 69, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+
+.bigSand_area .icon i {
+  color: #fff;
+  font-size: 68px;
+}
+
+/* line 75, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+
+.bigSand_area h4 {
+  font-size: 70px;
+  font-weight: 300;
+  color: #fff;
+  margin: 10px 0;
+}
+
+@media (max-width: 767px) {
+  /* line 75, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+  .bigSand_area h4 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 75, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+  .bigSand_area h4 {
+    font-size: 40px;
+  }
+}
+
+/* line 87, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_bigSand.scss */
+
+.bigSand_area p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+
+/* 사용자 추가 css */
+
+.bigSand_project_title {
+  background-color: #001D38;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.bigSand_project_title h4 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 80px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+/* bread_crumb start */
+
+.bigSand_breadcrumb_wrapper{
+  margin-top: 10px;
+  margin-bottom: 80px;
+  border-radius: 10px;
+  height: 45px;
+}
+
+.bigSand_breadcrumb { 
+  list-style: none; 
+  overflow: hidden; 
+  font: 18px Sans-Serif;
+}
+.bigSand_breadcrumb li { 
+  float: left; 
+}
+.bigSand_breadcrumb li a {
+  color: white;
+  text-decoration: none; 
+  padding: 10px 0 10px 65px;
+  background: brown; /* fallback color */
+  background: #001D38; 
+  position: relative; 
+  display: block;
+  float: left;
+}
+.bigSand_breadcrumb li a::after { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent; /* Go big on the size, and let overflow hide */
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #001D38;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  left: 100%;
+  z-index: 2; 
+}
+.bigSand_breadcrumb li a::before { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;       
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1; 
+}
+.bigSand_breadcrumb li:first-child a {
+  padding-left: 10px;
+}
+.bigSand_breadcrumb li:nth-child(2) a       { background:        rgb(0,45,85); }
+.bigSand_breadcrumb li:nth-child(2) a:after { border-left-color: rgb(0,45,85); }
+.bigSand_breadcrumb li:nth-child(n+3) a       { 
+  background:        #b3b3b3; 
+  color: white;
+  text-decoration: none; 
+  padding: 10px 0 10px 10px;
+  position: relative; 
+  display: block;
+  float: left;
+  padding-right: 10px;
+  margin-left:10px;
+  border-radius:5px;
+}
+.bigSand_breadcrumb li:nth-child(n+3) a::after { 
+  border-left-color: #b3b3b3; 
+  content: " "; 
+  display: block; 
+  border-top: 0px solid transparent; /* Go big on the size, and let overflow hide */
+  border-bottom: 0px solid transparent;
+  border-left: 0px solid #001D38;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  left: 100%;
+  z-index: 2; 
+}
+.bigSand_breadcrumb li:nth-child(n+3) a::before { 
+  border-left-color: #b3b3b3;
+  content: " "; 
+  display: block; 
+  border-top: 0px solid transparent;       
+  border-bottom: 0px solid transparent;
+  border-left: 0px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1; 
+}
+.bigSand_breadcrumb li:nth-child(3) a{
+  margin-left:50px;
+}
+/* .bigSand_breadcrumb li:nth-child(4) a       { background:        rgb(0,75,145); }
+.bigSand_breadcrumb li:nth-child(4) a:after { border-left-color: rgb(0,75,145); }
+.bigSand_breadcrumb li:nth-child(5) a       { background:        rgb(0,90,175); }
+.bigSand_breadcrumb li:nth-child(5) a:after { border-left-color: rgb(0,90,175); } */
+
+.bigSand_breadcrumb li a:hover { 
+  background: rgb(0,75,145); 
+}
+.bigSand_breadcrumb li a:hover:after { 
+  border-left-color: rgb(0,75,145) !important; 
+}
+
+/* bread_crumb end */
+
+.bigSand_border {
+  border: 2px lightslategray solid;
+  border-radius: 10px;
+}
+
+.bigSand_tm-10 {
+  margin-top: 10px;
+}
+
+.bigSand_text {
+  line-height: 80px;
+}
+
+.bigSand_right_profile {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 150px;
+  width: 100%;
+  border: 1px solid #b3b3b3;
+}
+
+.bigSand_right_profile div {
+  float: left;
+}
+
+.bigSand_profile_icon {
+  width: 20%;
+  height: 100%;
+  line-height: 150px;
+}
+
+.bigSand_profile_icon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #b3b3b3;
+}
+
+.bigSand_profile_name {
+  height: 40%;
+  width: 78%;
+  text-align: center;
+  margin: 0px;
+}
+
+.bigSand_profile_name h5 {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.bigSand_profile_button {
+  height: 30%;
+  width: 50%;
+  text-align: center;
+}
+
+.bigSand_profile_button .btn1 {
+  vertical-align: middle;
+}
+
+.bigSand_review {
+  padding-left: 20px;
+  padding-right: 20px;
+  height:auto;
+  overflow:hidden;
+  border: 1px solid #b3b3b3;
+  border-radius: 3px;
+}
+
+.bigSand_review div {
+  float: left;
+}
+
+.bigSand_review_profile_icon {
+  width: 120px;
+  height: 100%;
+  line-height: 150px;
+}
+
+.bigSand_review_profile_icon img {
+  width: 100%;
+  height: auto;
+  max-height: 80px;
+  max-width: 80px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #b3b3b3;
+}
+
+.bigSand_review_profile_name {
+  height: 40px;
+  text-align: left;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+
+.bigSand_review_profile_name h5 {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.bigSand_review_star_rating{
+  width: auto;
+  height: 60px;
+  line-height: 50px;
+  vertical-align: top;
+}
+
+.bigSand_review_star_rating span{
+  font-size: 25px;
+  color: #f91842;
+}
+
+.bigSand_review_btns {
+  height: 60px;
+  width: 50%;
+}
+
+.bigSand_review_btns{
+  vertical-align: middle;
+}
+
+.bigSand_genric-btn.btn2.review_btn{
+  margin-top: 12px;
+}
+
+.bigSand_review_text{
+  width:78%;
+  padding-top:10px;
+  padding-left:10px;
+  
+}
+
+.bigSand_review_text p{
+  color:black;
+}
+
+.bigSand_genric-btn {
+  display: inline-block;
+  outline: none;
+  line-height: 30px;
+  padding: 0 10px;
+  font-size: .8em;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border-radius: 3px;
+}
+
+.bigSand_genric-btn.btn1 {
+  color: #f91842;
+  border: 1px solid #f91842/*transparent*/
+  ;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+/* line 261, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_elements.scss */
+
+.bigSand_genric-btn.btn1:hover {
+  color: #fff;
+  border: 2px solid white;
+  background: #f91842;
+}
+
+.bigSand_genric-btn.btn2 {
+  color: #b3b3b3;
+  border: 1px solid #b3b3b3/*transparent*/
+  ;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+/* line 261, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_elements.scss */
+
+.bigSand_genric-btn.btn2:hover {
+  color: #fff;
+  border: 2px solid white;
+  background: #b3b3b3;
+}
+
+.bigSand_star_rating {
+  width: 68%;
+  height: 30%;
+  line-height: 50px;
+  vertical-align: top;
+}
+
+.bigSand_star_rating span {
+  font-size: 25px;
+  color: #f91842;
+}
+
+.bigSand_star_point_right {
+  width: 30%;
+  height: 30%;
+}
+
+.star_point {
+  width: 30%;
+  height: 50%;
+  border: 0px;
+  color: #f91842;
+  margin-left: 20px;
+  margin-right: auto;
+}
+.review_star{
+  background-color: #f9f9f9;
+  width:30px;
+  margin: 0px;
+}
+
+.bigSand_project_info {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  border: 1px solid #b3b3b3;
+}
+
+.bigSand_project_schedule {
+  width: 100%;
+  height: 50px;
+  line-height: 10px;
+  border-radius: 3px;
+  position: absolute;
+  margin-top: 15px;
+  margin-bottom: auto;
+  position: relative;
+  vertical-align: middle;
+  border: 1px solid #e2e2e2;
+  background-color: #e2e2e2;
+}
+
+.bigSand_schedule_wrapper {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bigSand_schedule_wrapper input {
+  border: 0px;
+  width: 45%;
+  text-align: center;
+  background-color: #e2e2e2;
+}
+
+.bigSand_schedule_wrapper span {
+  border: 0px;
+  width: 10%;
+}
+
+.bigSand_project_price {
+  width: 100%;
+  height: 50px;
+  line-height: 10px;
+  border-radius: 3px;
+  position: absolute;
+  margin-top: 15px;
+  margin-bottom: auto;
+  position: relative;
+  vertical-align: middle;
+  border: 1px solid #e2e2e2;
+  background-color: #e2e2e2;
+}
+
+.bigSand_price_wrapper {
+  width: 100%;
+  height: 50px;
+  line-height: 10px;
+  border-radius: 3px;
+  position: absolute;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 20px;
+  color: #001D38;
+}
+
+.bigSand_price_wrapper input[type="number"]::-webkit-outer-spin-button,
+.bigSand_price_wrapper input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.bigSand_price_input{
+  width:60px;
+  background-color: #e2e2e2;
+  border:none;
+  min-width:50px!important;
+  max-width:99.99%!important;
+  transition: width 0.25s;
+}
+.bigSand_price_input::-webkit-input-placeholder{
+  color:black;
+}
+.bigSand_right_payment{
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 75px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
+  line-height: 70px;
+  display:block;
+  border-radius: 3px;
+}
+
+.bigSand_payment_btn{
+  color: #f91842;
+  border: 1px solid #f91842/*transparent*/;
+  text-decoration: none;
+  border-radius: 3px;
+  
+}
+.bigSand_payment_btn:hover{
+  color: #fff;
+  border: 2px solid white;
+  border-radius: 3px;
+  background: #f91842;
+  text-decoration: none;
+}
+.bigSand_project_content{
+  width:100%;
+  padding-left:40px;
+  padding-top:80px;
+  margin-bottom:80px;
+  background :#f9f9f9;
+}
+.bigSand_project_review{
+  width:100%;
+  padding-left:40px;
+  padding-top:80px;
+  margin-bottom:80px;
+  background :#f9f9f9;
+  display:none;
+}
+.bigSand_hr{
+  width:98%;
+  height:1px;
+  margin:auto;
+  border: 1px #b3b3b3 solid;
+}
+
+.bigSnad_comment_wrapper{
+  overflow:hidden;
+	height:auto;
+}
+.bigSnad_comment_wrapper h1{
+  margin-top: 15px;
+  margin-left: 20px;
+  font-family: Raleway, sans-serif;
+  overflow:hidden;
+	height:auto;
+}
+
+.bigSand_comments{
+  margin-top:40px;
+
+}
+
+.bigSand_comment_id{
+  
+  height:30px;
+  border-radius: 3px;
+  background-color: #e2e2e2;
+}
+
+.bigSand_comment_id_userId{
+  width:49%;
+  text-align: left;
+  display:inline-block;
+}
+.bigSand_comment_id_userId a{
+  color:black;
+  font-weight: bold;
+  padding-left:10px;
+  text-decoration: none;
+}
+.bigSand_comment_id_userId a:hover{
+  color:#f91842;
+  font-weight: bold;
+  padding-left:10px;
+  text-decoration: none;
+}
+.bigSand_comment_id_writeTime{
+  width:49%;
+  text-align: right;
+  display:inline-block;
+}
+.bigSand_comment_id_writeTime span{
+  padding-right:10px;
+  color:gray;
+}
+
+.bigSand_comment_text{
+  width:90%;
+  padding-top:10px;
+  padding-left:40px !important;
+  padding-bottom:10px;
+}
+.bigSand_comment_btns{
+  text-align: right;
+  padding-right: 10px;
+  padding-bottom:10px;
+}
+
+.comment_write{
+  margin-top: 30px;
+  position:relative
+}
+
+.input_Comment_Comment{
+  padding-left: 30px;
+}
+
+.comment_write_btn{
+  width:9%;
+  height:94%;
+  display:inline-block;
+  line-height: 100px;
+  position: absolute;
+  top: 0%;
+  margin-left: 10px;
+}
+
+.bigSand_comment_tab_ul{list-style:none;}
+
+.bigSand_comment .bigSand_comment_comment{
+  padding-left: 30px;
+}
+
+.bigSand_comment_tab_tabmenu{ 
+  max-width:99%; 
+  margin: 0 auto; 
+  position:relative; 
+}
+.bigSand_comment_tab_tabmenu ul li{
+  display:  inline-block;
+  width:50%; 
+  float:left;  
+  text-align:center; 
+  background :#ccc;
+  
+  line-height:40px;
+}
+.bigSand_comment_tab_tabmenu label{
+  display:block;
+  width:100%; 
+  height:40px;
+  line-height:40px;
+  margin-bottom:0px;
+}
+.bigSand_comment_tab_tabmenu input{display:none;}
+
+.bigSand_comment_tab_tabmenu input:checked ~ label{
+  background:#f9f9f9;
+}
+.tabmenu input:checked ~ .tabCon{
+  display:block;
+}
+
+.comment_paging{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bigSand_content_btns{
+  margin-top:20px;
+  text-align: right;
+  padding-right: 10px;
+  padding-bottom:10px;
+}
+
+
+.bigSand_genric-btn.btn3 {
+  width:100px;
+  color: #f91842;
+  border: 1px solid #f91842/*transparent*/
+  ;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+/* line 261, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_elements.scss */
+
+.bigSand_genric-btn.btn3:hover {
+  width:100px;
+  color: #fff;
+  border: 2px solid #f91842;
+  background: #f91842;
+}
+
+.bigSand_popup_profile_ico{
+  width: 20%;
+  height: 100%;
+  margin-right: 10px;
+  line-height: 150px;
+}
+.bigSand_popup_profile_ico img{
+width: 100%;
+height: auto;
+max-height: 120px;
+max-width: 120px;
+object-fit: cover;
+object-position: top;
+border-radius: 50%;
+vertical-align: middle;
+border: 1px solid #b3b3b3;
+}
+
+.bigSand_popup_profile_name {
+  height: 30%;
+  width: 50%;
+  text-align: left;
+  margin: 0px;
+}
+
+.bigSand_popup_profile_name h5 {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.bigSand_popup_profile_button {
+  height: 30%;
+  width: 50%;
+  text-align: left;
+}
+
+.bigSand_popup_profile_button .btn1 {
+  vertical-align: middle;
+}
+.bigSand_header_ico {
+  width: 100px;
+  height: 100%;
+  margin-right: 10px;
+  line-height: 150px;
+  display:inline;
+}

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title>MyMemberEdit</title>
+
+    <!-- script -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+ 
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/kim.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    </head>
+    <body>
+       <!-- header-start -->
+    <header>
+      <div class="header-area ">
+          <div id="sticky-header" class="main-header-area">
+              <div class="container-fluid ">
+                  <div class="header_bottom_border">
+                      <div class="row align-items-center">
+                          <div class="col-xl-3 col-lg-2">
+                              <div class="logo">
+                                  <a href="index.html">
+                                      <img src="img/logo.png" alt="">
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-xl-6 col-lg-7">
+                              <div class="main-menu  d-none d-lg-block">
+                                  <nav>
+                                      <ul id="navigation">
+                                          <li><a href="index.html">home</a></li>
+                                          <li><a href="Listings.html">Listings</a></li>
+                                          <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                              <ul class="submenu">
+                                                  
+                                                  <li><a href="elements.html">elements</a></li>
+                                                  <li><a href="single_listings.html">Single listing</a></li>
+                                              </ul>
+                                          </li>
+                                          <li><a href="about.html">about</a></li>
+                                          <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                              <ul class="submenu">
+                                                  <li><a href="blog.html">blog</a></li>
+                                                  <li><a href="single-blog.html">single-blog</a></li>
+                                              </ul>
+                                          </li>
+                                          <li><a href="contact.html">Contact</a></li>
+                                      </ul>
+                                  </nav>
+                              </div>
+                          </div>
+                          <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                              <div class="Appointment">
+                                  <div class="book_btn d-none d-lg-block">
+                                      <a href="#">Sign In</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12">
+                              <div class="mobile_menu d-block d-lg-none"></div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- header-end -->
+   <!-- bradcam_area  -->
+   <div class="bradcam_area bradcam_bg_2">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-12">
+                      <div class="bradcam_text text-center">
+                          <h3>Single Blog</h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--/ bradcam_area  -->      
+
+
+        <section class="body-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="blog_right_sidebar">
+                            <aside class="single_sidebar_widget post_category_widget">
+                               
+                                <ul class="list cat-list" >
+                                   <li>
+                                      <a href="My_Member_Info.html" class="d-flex">
+                                         <p text-align="center">회원정보</p>
+                                         
+                                      </a>
+                                   </li>
+                                   <li>
+                                      <a href="My_Member_Edit.html" class="d-flex">
+                                         <p>회원정보 수정</p>
+                                         
+                                      </a>
+                                   </li>
+                                   <li>
+                                      <a href="My_Member_Withdrawal.html" class="d-flex">
+                                         <p>회원탈퇴</p>
+                                        
+                                      </a>
+                                   </li>
+                                   <li>
+                                      <a href="My_Profile_Edit.html" class="d-flex">
+                                         <p>프로필관리</p>
+                                         
+                                      </a>
+                                   </li>
+                                   <li>
+                                      <a href="#" class="d-flex">
+                                         <p>결제내역</p>
+                                         
+                                      </a>
+                                   </li>
+                                   
+                                </ul>
+                             </aside>
+
+
+
+                        </div> <!-- 사이드바 -->
+
+
+                    </div> <!-- <div class="col-lg-4"> -->
+                    <div class="col-lg-9 posts-list">
+
+                     <p>Profile</p>
+                    
+                    <div class = "container">
+                        
+                            
+                            <label for="">&nbsp;&nbsp;&nbsp;이름</label>
+                            <div class="col-sm-4">
+                               <div class="form-group">
+                               <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''" 
+                               onblur="this.placeholder = '이름을 입력하세요'" placeholder = '이름을 입력하세요'>
+                               </div>
+                            </div>
+                         
+                            <label for="">&nbsp;&nbsp;&nbsp;전화번호</label>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''" 
+                                onblur="this.placeholder = '전화번호를 입력하세요'" placeholder = '전화번호를 입력하세요'>
+                                </div>
+                            </div>
+                            
+                            <label for="">&nbsp;&nbsp;&nbsp;이메일</label>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''" 
+                                onblur="this.placeholder = '이메일을 입력하세요'" placeholder = '이메일을 입력하세요'>
+                                </div>
+                            </div>
+        
+                            <label for="">&nbsp;&nbsp;&nbsp;비밀번호</label>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                <input class="form-control" name="name" id="name" type="password" onfocus="this.placeholder = ''" 
+                                onblur="this.placeholder = '비밀번호를 입력하세요'" placeholder = '비밀번호를 입력하세요'>
+                                </div>
+                            </div>
+        
+                            <label for="">&nbsp;&nbsp;&nbsp;비밀번호 입력 확인</label>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                <input class="form-control" name="name" id="name" type="password" onfocus="this.placeholder = ''" 
+                                onblur="this.placeholder = '비밀번호를 입력하세요'" placeholder = '비밀번호를 입력하세요'>
+                                </div>
+                            </div>
+        
+                            <label for="">&nbsp;&nbsp;&nbsp;관심분야</label>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''" 
+                                onblur="this.placeholder = '#관심분야를 입력하세요'" placeholder = '#관심분야를 입력하세요'>
+                                </div>
+                            </div>
+                        
+
+
+                        
+                            <div class="col-xl-6 col-md-6" style="float: left;">
+                        
+                                <div class="col-xl-6 col-md-6" style="float: left;">
+                                   <small>1차 관심분야</small><br>
+                                   <div class="input_field">
+                                      <select class="wide">
+                                              <option value="1">영어</option>
+                                              <option value="2">사주</option>
+                                              <option value="3">해양</option>
+                                              <option value="4">요리</option>
+                                      </select>
+                                   </div>
+                                </div>
+                                <div class="col-xl-6 col-md-6" style="float: left;">
+                                   <small>2차 관심분야</small><br>
+                                   <div class="input_field">
+                                      <select class="wide">
+                                              <option value="1">영어회화</option>
+                                              <option value="2">타로카드</option>
+                                              <option value="3">스킨스쿠버</option>
+                                              <option value="4">디저트 강좌</option>
+                                      </select>
+                                   </div>
+                                </div>
+        
+        
+                             </div>
+                                <div class="col-xl-6 col-md-6" style="float: left;">
+                                     
+                                   <div class="col-xl-6 col-md-6" style="float: left;">
+                                      <small>1차 지역</small><br>
+                                      <div class="input_field">
+                                         <select class="wide">
+                                            <option value="1">서울시</option>
+                                            <option value="2">인천시</option>
+                                            <option value="3">강릉시</option>
+                                            <option value="4">부산시</option>
+                                         </select>
+                                      </div> 
+                                   </div>
+        
+                                   <div class="col-xl-6 col-md-6" style="float: left;">
+                                      <small>2차 지역</small><br>
+                                      <div class="input_field">
+                                         <select class="wide">
+                                            <option value="1">강북구</option>
+                                            <option value="2">영종도</option>
+                                            <option value="3">양양군</option>
+                                            <option value="4">해운대구</option>
+                                         </select>
+                                      </div>
+                                   </div>
+        
+                                </div>
+                          
+                            
+
+                        <div class="row">
+                         
+                            <div class="col-xl-12 col-md-12" style="margin-top: 15px;">
+                                <div class="col-xl-4 col-md-4" style="float: left;"> 
+                                    <label for="">은행 선택</label>
+                                        <div class="input_field">
+                                            <select class="wide">
+                                                <option value="1">국민은행</option>
+                                                <option value="2">하나은행</option>
+                                                <option value="3">신한은행</option>
+                                                <option value="4">농협</option>
+                                            </select>
+                                        </div>
+                                </div>
+
+                                <div class="col-xl-4 col-md-4" style="float: left;">
+                                    <label for="">계좌 번호</label>
+                                    <div >
+                                        <div class="form-group">
+                                        <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''" 
+                                        onblur="this.placeholder = '계좌번호를 입력하세요'" placeholder = '계좌번호를 입력하세요'>
+                                        </div>                                   
+                                    </div>                                                                
+                                </div>
+                                <div class="col-xl-4 col-md-4" style="float: left">
+                                    <label for="">계좌 번호</label>
+                                        <div class="form-group">
+                                            <a href="#" class="genric-btn info-border radius">인증</a>
+                                        </div>    
+                                </div>
+                            </div>
+
+                        </div>
+                           
+                            
+                            
+                            
+                            
+                            <div class="row" style="display:block ; text-align:center">
+                                <a href="#" id="click_submit" class="genric-btn info-border radius">확인</a>
+                                <a href="#" id="click_reset" type="reset" value="Reset" class="genric-btn info-border radius">취소</a>
+                            </div>
+    
+
+                    </div>   
+                </div>   
+
+                       
+                        
+
+                        
+                    </div> <!-- 컨테이너 -->
+                     
+                  
+
+
+
+                     </div>
+                 </div>
+                 
+                 
+
+                 
+               
+
+               </div>
+               
+               </div>
+                
+            </div>
+        </section>   
+        
+        
+        <!-- footer start -->
+    <footer class="footer">
+      <div class="footer_top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-4 col-md-6 col-lg-3">
+                      <div class="footer_widget">
+                          <div class="footer_logo">
+                              <a href="#">
+                                  <img src="img/footer_logo.png" alt="">
+                              </a>
+                          </div>
+                          <p>
+                              Esteem spirit temper too say adieus who <br> direct esteem. It esteems luckily or <br>
+                              picture placing drawing.
+                          </p>
+                          <div class="socail_links">
+                              <ul>
+                                  <li>
+                                      <a href="#">
+                                          <i class="ti-facebook"></i>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#">
+                                          <i class="fa fa-google-plus"></i>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#">
+                                          <i class="fa fa-twitter"></i>
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="#">
+                                          <i class="fa fa-instagram"></i>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+
+                      </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-lg-3">
+                      <div class="footer_widget">
+                          <h3 class="footer_title">
+                              Services
+                          </h3>
+                          <ul>
+                              <li><a href="#">SEO/SEM </a></li>
+                              <li><a href="#">Web design </a></li>
+                              <li><a href="#">Ecommerce</a></li>
+                              <li><a href="#">Digital marketing</a></li>
+                          </ul>
+
+                      </div>
+                  </div>
+                  <div class="col-xl-2 col-md-6 col-lg-2">
+                      <div class="footer_widget">
+                          <h3 class="footer_title">
+                              Useful Links
+                          </h3>
+                          <ul>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Blog</a></li>
+                              <li><a href="#"> Contact</a></li>
+                              <li><a href="#">Support</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6 col-lg-4">
+                      <div class="footer_widget">
+                          <h3 class="footer_title">
+                              Subscribe
+                          </h3>
+                          <form action="#" class="newsletter_form">
+                              <input type="text" placeholder="Enter your mail">
+                              <button type="submit">Subscribe</button>
+                          </form>
+                          <p class="newsletter_text">Esteem spirit temper too say adieus who direct esteem esteems
+                              luckily.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copy-right_text">
+          <div class="container">
+              <div class="footer_border"></div>
+              <div class="row">
+                  <div class="col-xl-12">
+                      <p class="copy_right text-center">
+                          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                           Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with 
+                           <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!--/ footer end  -->
+
+
+
+    <script>
+        
+        $('#click_submit').click(function(){
+            var answer = confirm ('수정 하시겠습니까?');
+            if(answer){
+
+                
+                alert("수정 되었습니다")
+            }else{
+                alert("수정이 취소 되었습니다!!")
+                return false;
+            }
+        });
+
+
+        $("#click_reset").click(function(){
+
+            // $("#personal_info")[0].reset();
+                alert("취소되었습니다.");
+                return false
+        });
+
+    </script>
+
+
+
+     <!-- link that opens popup -->
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <!-- <script src="js/gijgo.min.js"></script> -->
+    <script src="js/slick.min.js"></script>
+   
+
+    
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+
+    <script src="js/main.js"></script>     
+
+
+
+    </body>
+</html>
+
+
+
+
+                        
